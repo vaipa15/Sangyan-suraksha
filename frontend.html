@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SANGYAN Suraksha</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div>
+        <h1>SANGYAN Suraksha</h1>
+
+        <p>
+            Financial Scam &amp; Misinformation Resilience
+        </p>
+    </div>
+
+    <div class="language-box">
+
+        <label for="language">
+            Language
+        </label>
+
+        <select id="language">
+
+            <option value="en">
+                English
+            </option>
+
+            <option value="hi">
+                हिन्दी
+            </option>
+
+        </select>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <section class="hero">
+
+        <div>
+
+            <h2>
+                Check before you trust.
+            </h2>
+
+            <p>
+                Paste a financial message, claim, link or
+                tip-group message. SANGYAN identifies
+                explainable risk signals and suggests safer
+                next steps.
+            </p>
+
+        </div>
+
+        <div class="shield">
+            🛡️
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <div class="section-header">
+
+            <div>
+
+                <h3>
+                    Analyse a message
+                </h3>
+
+                <p>
+                    Never enter OTPs, passwords, PINs or
+                    sensitive account details.
+                </p>
+
+            </div>
+
+            <button
+                id="voiceBtn"
+                class="secondary"
+            >
+                🎙️ Speak
+            </button>
+
+        </div>
+
+
+        <textarea
+            id="message"
+            placeholder="Example: Guaranteed 30% monthly return. Pay ₹10,000 today to join our Telegram group..."
+        ></textarea>
+
+
+        <div class="actions">
+
+            <button
+                id="analyzeBtn"
+                class="primary"
+            >
+                Analyse Risk
+            </button>
+
+            <button
+                id="clearBtn"
+                class="secondary"
+            >
+                Clear
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section
+        id="result"
+        class="card hidden"
+    >
+
+        <div class="risk-row">
+
+            <div>
+
+                <span class="muted">
+                    Risk assessment
+                </span>
+
+                <h2 id="riskLevel">
+                    -
+                </h2>
+
+            </div>
+
+            <div class="score">
+
+                <span id="riskScore">
+                    0
+                </span>
+
+                <small>
+                    /100
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="summary"
+            class="summary"
+        ></div>
+
+
+        <h3>
+            Why?
+        </h3>
+
+        <div
+            id="findings"
+            class="findings"
+        ></div>
+
+
+        <h3>
+            Safer next steps
+        </h3>
+
+        <ul
+            id="safeActions"
+            class="safe-actions"
+        ></ul>
+
+
+        <div
+            id="urlsBox"
+            class="urls hidden"
+        >
+
+            <h3>
+                URLs detected
+            </h3>
+
+            <ul id="urls"></ul>
+
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <div class="section-header">
+
+            <div>
+
+                <h3>
+                    Recent checks
+                </h3>
+
+                <p>
+                    Your local analysis history.
+                </p>
+
+            </div>
+
+            <button
+                id="refreshHistory"
+                class="secondary"
+            >
+                Refresh
+            </button>
+
+        </div>
+
+        <div
+            id="history"
+            class="history"
+        ></div>
+
+    </section>
+
+
+    <section class="official card">
+
+        <h3>
+            Official resources
+        </h3>
+
+        <div class="resource-grid">
+
+            <a
+                href="https://www.sebi.gov.in/"
+                target="_blank"
+                rel="noopener"
+            >
+                SEBI
+            </a>
+
+            <a
+                href="https://scores.sebi.gov.in/"
+                target="_blank"
+                rel="noopener"
+            >
+                SCORES
+            </a>
+
+            <a
+                href="https://nsdl.co.in/"
+                target="_blank"
+                rel="noopener"
+            >
+                NSDL
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            SANGYAN Suraksha is an educational and
+            investor-protection tool. It does not provide
+            investment recommendations.
+        </p>
+
+    </footer>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
